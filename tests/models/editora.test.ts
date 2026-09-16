@@ -34,6 +34,7 @@ describe("Testando model editora", () => {
     const editora = new Editora(objetoEditora);
 
     const dados = await editora.save();
+    objId = dados.id;
     expect(dados.nome).toBe("Vozes");
     expect(dados.id).toBeDefined();
   });
@@ -43,6 +44,5 @@ describe("Testando model editora", () => {
     expect(editora.affected).toBe(1);
   });
 
-  test.todo("Deve salvar editora no db usando async e await");
   test.todo("Deve fazer uma chamada simulada ao db");
 });
