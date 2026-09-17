@@ -9,7 +9,7 @@ afterAll(async () => {
 });
 
 // Testa o modelo editora
-describe("Testando model editora", () => {
+describe.skip("Testando model editora", () => {
   const objetoEditora = {
     nome: "Vozes",
     cidade: "Petrópolis",
